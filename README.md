@@ -8,7 +8,7 @@ FriendsApp is a Native Android app developed using [Kotlin](https://kotlinlang.o
 
 ## What it does
 
-This App shows a list of users (friends), using the [RandomUsersAPI](https://randomuser.me//).
+This App shows a list of users (friends), using the [RandomUsersAPI](https://randomuser.me/).
 
 ## Download and Install
 
