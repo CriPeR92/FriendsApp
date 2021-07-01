@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.randomfriends.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homefragment_to_friendfragment"
+            app:destination="@id/friendFragment">
+            <argument
+                android:name="image"
+                app:argType="string" />
+            <argument
+                android:name="firstname"
+                app:argType="string" />
+            <argument
+                android:name="lastname"
+                app:argType="string" />
+            <argument
+                android:name="address"
+                app:argType="string" />
+            <argument
+                android:name="city"
+                app:argType="string" />
+            <argument
+                android:name="state"
+                app:argType="string" />
+            <argument
+                android:name="country"
+                app:argType="string" />
+            <argument
+                android:name="email"
+                app:argType="string" />
+            <argument
+                android:name="cell"
+                app:argType="string" />
+
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/friendFragment"
+        android:name="com.example.randomfriends.ui.friend.FriendFragment"
+        android:label="fragment_friend"
+        tools:layout="@layout/fragment_friend">
+        <action
+            android:id="@+id/go_back"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@+id/homeFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+        <argument
+            android:name="firstname"
+            app:argType="string" />
+        <argument
+            android:name="lastname"
+            app:argType="string" />
+        <argument
+            android:name="address"
+            app:argType="string" />
+        <argument
+            android:name="city"
+            app:argType="string" />
+        <argument
+            android:name="state"
+            app:argType="string" />
+        <argument
+            android:name="country"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <argument
+            android:name="cell"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>

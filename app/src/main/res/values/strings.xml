@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Random Friends</string>
+    <string name="unexpected_error">Unexpected Error.</string>
+    <string name="space">\u0020</string>
+    <string name="name">Name: </string>
+    <string name="email">Email: </string>
+    <string name="cellphone">Phone: </string>
+    <string name="address">Address: </string>
+</resources>
